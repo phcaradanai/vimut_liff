@@ -1,11 +1,11 @@
 {
-    "name": "xengistic",
-    "short_name": "xengistic",
+    "name": "fluuter_web_test",
+    "short_name": "fluuter_web_test",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#hexcode",
-    "theme_color": "#hexcode",
-    "description": "XENGISTIC",
+    "background_color": "#0175C2",
+    "theme_color": "#0175C2",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
