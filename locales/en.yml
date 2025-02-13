@@ -1,0 +1,76 @@
+auth:
+  welcome: Welcome
+  user: Username
+  pass: Password
+  userHint: Please enter your username
+  passHint: Please enter your password
+  remember: Remember Username
+  forgot: Forgot Password?
+  signin: Sign-in
+  signout: Sign-out
+
+menu:
+  dashboard: Dashboard
+  report: Reports
+  reportStatus: Status Reports
+  reportNoti: Notification Reports
+  reportSummary: Summary Reports
+  reportMonthly: Monthly Reports
+  reportCovid: COVID-19 Reports
+  manage: Manage
+  manageXentemp: XenTemps
+  manageReceptor: Receptors
+  manageTempProfile: Temperature Profiles
+  manageNotiProfile: Notification Profiles
+  manageNotiChannel: Notication Channels
+  manageOperator: Operators
+  admin: Admin
+  adminProject: Projects
+  adminStaff: Staffs
+  adminRole: Roles
+  adminAudit: Audits
+  setup: Setup
+  setupModule: Modules
+
+manage:
+  status:
+    isActive:
+      Y: "{0} Active"
+      N: "{0} Inactive"
+  receptors:
+    title: RECEPTOR SETUP
+    add: NEW RECEPTOR
+  xentemp:
+    title: XENTEMP SETUP
+    add: NEW XENTEMP
+  tempProfiles:
+    title: TEMP PROFILE SETUP
+    add: NEW TEMP PROFILE
+  notiProfiles:
+    title: NOTI PROFILE SETUP
+    add: NEW NOTI PROFILE
+  operators:
+    title: OPERATOR SETUP
+    add: NEW OPERATOR
+
+filter:
+  location: Location
+  keyword: Keyword
+  date:
+    from: From Date
+    to: To Date
+  button:
+    search: SEARCH
+    export: EXPORT
+    view:
+      map: VIEW MAP
+    new:
+      xentemp: New XenTemp
+      staff: NEW STAFF
+      building: NEW BUILDING
+      floor: NEW FLOOR
+      receptors: NEW RECEPTOR
+      beacon: NEW BEACON
+      tempprofiles: NEW TEMP PROFILE
+      notiprofiles: NEW NOTI PROFILE
+      operators: NEW OPERATOR

@@ -1,0 +1,12 @@
+input, select { 
+  @apply border-1 px-2 h-8 w-full;
+}
+
+input[type=checkbox] {
+  @apply h-5 w-5;
+}
+
+textarea { 
+  @apply border-1 px-2 w-full;
+}
+
