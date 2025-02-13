@@ -1,7 +1,7 @@
 export default {
   name: 'XENGISTIC_ML',
 
-  apiUrl: '/',
+  apiUrl: process.env.VITE_API_URL ?? '/',
 
   secret: '[XML]',
 
