@@ -1,0 +1,33 @@
+auth:
+  welcome: สวัสดี
+  user: ชื่อผู้ใช้
+  pass: รหัสผ่าน
+  userHint: กรุณาระบุชื่อผู้ใช้
+  passHint: กรุณาระบุรหัสผ่าน
+  remember: จดจำชื่อผู้ใช้
+  forgot: ลืมรหัสผ่าน?
+  signin: ลงชื่อเข้าใช้ระบบ
+  signout: ออกจากระบบ
+
+menu:
+  dashboard: ภาพรวม
+  report: รายงาน
+  reportStatus: รายงานสถานะ
+  reportNoti: รายงานการแจ้งเตือน
+  reportSummary: รายงานสรุป
+  reportMonthly: รายงาานสรุปรายเดือน
+  reportCovid: รายงาน COVID-19
+  manage: จัดการ
+  manageXentemp: XenTemps
+  manageReceptor: ตัวรับสัญญาณ
+  manageTempProfile: รูปแบบอุณหภูมิ
+  manageNotiProfile: รูปแบบการแจ้งเตือน
+  manageNotiChannel: ช่องทางแจ้งเตือน
+  manageOperator: ผู้รับผิดชอบ
+  admin: ผู้ดูแลระบบ
+  adminProject: โครงการ
+  adminStaff: เจ้าหน้าที่
+  adminRole: สิทธิ์การใช้งาน
+  adminAudit: บันทึกภายในระบบ
+  setup: ตั้งค่า
+  setupModule: โมดูล
