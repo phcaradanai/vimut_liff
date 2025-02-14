@@ -6,7 +6,8 @@ export const useJobStore = defineStore('job', {
         return {
             jobs: [],
             selectedJob: null,
-            paramId: null
+            paramId: null,
+            apiFetch: null
         }
     },
     actions: {
@@ -15,7 +16,10 @@ export const useJobStore = defineStore('job', {
                 let { data } = await axios.get(
                     `/api/porter/jobs?jobId=${paramData.jobId}`
                 )
-                console.log(`/api/porter/jobs?jobId=${paramData.jobId}`, data)
+                this.apiFetch = {
+                    "api": `/api/porter/jobs?jobId=${paramData.jobId}`,
+                    "data": data
+                }
                 let jobs = data?.data?.jobs ?? []
                 if (!jobs?.length) {
                     return

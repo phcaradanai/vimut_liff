@@ -21,6 +21,7 @@ meta:
     <p>access token: {{ liffEnv.accessToken }}</p>
     <pre>{{ appStore.token }}</pre>
     <pre>{{ jobStore.selectedJob }}</pre>
+    <pre>{{ jobStore.apiFetch }}</pre>
   </div>
 </template>
 
