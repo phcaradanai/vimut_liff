@@ -8,21 +8,21 @@ meta:
     class="top-0 bottom-0 left-0 right-0 absolute bg-white flex flex-col items-center justify-center"
   >
     <p class="text-5xl">XENGISTIC</p>
-    <img
+    <!-- <img
       :src="liffProfile.pictureUrl"
       alt="pictureUrl"
       class="rounded-full w-20"
-    />
+    /> -->
 
-    <p>{{ liffProfile.statusMessage }}</p>
-    <p>{{ liffProfile.displayName }}</p>
-    <p>{{ liffProfile.userId }}</p>
+    <!-- <p>{{ liffProfile.statusMessage }}</p> -->
+    <!-- <p>{{ liffProfile.displayName }}</p> -->
+    <!-- <p>{{ liffProfile.userId }}</p> -->
 
     <!-- <p>access token: {{ liffEnv.accessToken }}</p> -->
-    <pre>{{ appStore.token }}</pre>
-    <pre>{{ selectedJob }}</pre>
-    <pre>{{ jobStore.apiFetch }}</pre>
-    <pre>{{ jobStore.text }}</pre>
+    <!-- <pre>{{ appStore.token }}</pre> -->
+    <!-- <pre>{{ selectedJob }}</pre> -->
+    <!-- <pre>{{ jobStore.apiFetch }}</pre> -->
+    <!-- <pre>{{ jobStore.text }}</pre> -->
   </div>
 </template>
 
@@ -52,7 +52,6 @@ export default {
     this.jobStore.paramId = paramData
     await this.liffStore.initialLiff()
 
-    await this.jobStore.getJob(paramData)
     // this.$router.replace('/job')
   },
   computed: {

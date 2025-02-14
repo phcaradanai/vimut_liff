@@ -1,5 +1,6 @@
 import liff from '@line/liff'
 import { useAppStore } from '@/store/app-store.js'
+import { useJobStore } from '@/store/job-store'
 
 import { defineStore } from 'pinia'
 import axios from '@/lib/axios'
@@ -7,7 +8,7 @@ import axios from '@/lib/axios'
 export const useLiffStore = defineStore('liff', {
     state() {
         const appStore = useAppStore()
-
+        const jobStore = useJobStore()
         return {
             appStore,
             liffProfile: {
@@ -49,7 +50,8 @@ export const useLiffStore = defineStore('liff', {
                 })
                 .then(async () => {
                     await this.getToken()
-                    // await this.getJob()
+                    await this.jobStore.getJob()
+
                 })
 
             await liff.init({ liffId: import.meta.env.VITE_LIFF_ID })

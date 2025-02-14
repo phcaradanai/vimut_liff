@@ -7,22 +7,21 @@ export const useJobStore = defineStore('job', {
             jobs: [],
             selectedJob: null,
             paramId: null,
-            apiFetch: null,
-            text: 'xxxxxx'
+
         }
     },
     actions: {
-        async getJob(paramData) {
+        async getJob() {
             this.apiFetch = {
                 axios: await axios,
-                url: `/api/porter/jobs?jobId=${paramData.jobId}`
+                url: `/api/porter/jobs?jobId=${this.paramId.jobId}`
             }
             try {
                 let { data } = await axios.get(
-                    `/api/porter/jobs?jobId=${paramData.jobId}`
+                    `/api/porter/jobs?jobId=${this.paramId.jobId}`
                 )
                 this.apiFetch = {
-                    "api": `/api/porter/jobs?jobId=${paramData.jobId}`,
+                    "api": `/api/porter/jobs?jobId=${this.paramId.jobId}`,
                     "data": data
                 }
                 let jobs = data?.data?.jobs ?? []
