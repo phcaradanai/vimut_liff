@@ -15,6 +15,7 @@ export const useJobStore = defineStore('job', {
                 let { data } = await axios.get(
                     `/api/porter/jobs?jobId=${paramData.jobId}`
                 )
+                console.log(`/api/porter/jobs?jobId=${paramData.jobId}`, data)
                 let jobs = data?.data?.jobs ?? []
                 if (!jobs?.length) {
                     return

@@ -47,9 +47,8 @@ export default {
     const urlParams = new URLSearchParams(window.location.search)
     let paramData = JSON.parse(decodeURIComponent(urlParams.get('data')))
     this.jobStore.paramId = paramData
-    this.jobStore.getJob(paramData).then(() => {
-      this.$router.replace('/job')
-    })
+    await this.jobStore.getJob(paramData)
+    this.$router.replace('/job')
   },
   computed: {
     ...mapState(useLiffStore, [
