@@ -21,7 +21,7 @@ export default defineConfig({
     port: 3000,
     proxy: {
       '/api': {
-        target: 'https://api.xengistic.xenex.io/ ',
+        target: 'https://api.xengistic.xenex.io/',
         // target: 'http://localhost:7001',
         changeOrigin: true,
       },
