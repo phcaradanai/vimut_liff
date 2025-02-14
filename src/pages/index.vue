@@ -50,10 +50,9 @@ export default {
     const urlParams = new URLSearchParams(window.location.search)
     let paramData = JSON.parse(decodeURIComponent(urlParams.get('data')))
     this.jobStore.paramId = paramData
-    await this.liffStore
-      .initialLiff()
-      .then(async () => await this.jobStore.getJob(paramData))
+    await this.liffStore.initialLiff()
 
+    await this.jobStore.getJob(paramData)
     // this.$router.replace('/job')
   },
   computed: {
