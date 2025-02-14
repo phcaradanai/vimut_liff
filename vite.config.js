@@ -7,6 +7,7 @@ import Layouts from 'vite-plugin-vue-layouts'
 import ViteComponents from 'unplugin-vue-components/vite'
 import WindiCSS from 'vite-plugin-windicss'
 import VueI18n from '@intlify/vite-plugin-vue-i18n'
+import { viteVConsole } from 'vite-plugin-vconsole';
 // import { viteObfuscateFile } from 'vite-plugin-obfuscator'
 
 export default defineConfig({
@@ -38,6 +39,16 @@ export default defineConfig({
       compositionOnly: false,
       include: [path.resolve(__dirname, 'locales/**')],
     }),
+    viteVConsole({
+      entry: path.resolve(__dirname, './src/main.js'), // or you can use entry: [path.resolve('src/main.ts')]
+      enabled: true,
+      config: {
+        log: {
+          maxLogNumber: 1000,
+        },
+        theme: 'dark'
+      }
+    })
     // viteObfuscateFile(),
   ],
 })

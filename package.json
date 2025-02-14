@@ -18,6 +18,7 @@
     "dayjs": "^1.11.5",
     "md5": "^2.3.0",
     "pinia": "^2.0.20",
+    "vconsole": "^3.15.1",
     "vue": "^3.2.37",
     "vue-i18n": "^9.2.2",
     "vue-router": "^4.1.4"
@@ -31,6 +32,7 @@
     "unplugin-vue-components": "^0.22.4",
     "vite": "^3.0.9",
     "vite-plugin-pages": "^0.25.0",
+    "vite-plugin-vconsole": "^2.1.1",
     "vite-plugin-vue-layouts": "^0.7.0",
     "vite-plugin-windicss": "^1.8.7"
   },
