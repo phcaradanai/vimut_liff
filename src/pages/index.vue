@@ -20,7 +20,7 @@ meta:
 
     <p>access token: {{ liffEnv.accessToken }}</p>
     <pre>{{ appStore.token }}</pre>
-    <pre>{{ jobStore.selectedJob }}</pre>
+    <pre>{{ selectedJob }}</pre>
     <pre>{{ jobStore.apiFetch }}</pre>
     <pre>{{ jobStore.text }}</pre>
   </div>
@@ -61,7 +61,7 @@ export default {
       'liffContext',
       'liffFriendship',
     ]),
-    // ...mapState(useJobStore, ['selectedJob']),
+    ...mapState(useJobStore, ['selectedJob']),
   },
 
   methods: {},
