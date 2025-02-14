@@ -2,7 +2,7 @@
   <div class="flex flex-col">
     <div class="flex flex-col">
       <pre>{{ selectedJob }}</pre>
-      <!-- <pre>{{ appStore.token }}</pre> -->
+      <pre>{{ appStore.token }}</pre>
 
       <pre>xxxx{{ jobStore.paramId }}</pre>
     </div>
