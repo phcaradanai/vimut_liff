@@ -7,7 +7,8 @@ export const useJobStore = defineStore('job', {
             jobs: [],
             selectedJob: null,
             paramId: null,
-            apiFetch: null
+            apiFetch: null,
+            text: 'xxxxxx'
         }
     },
     actions: {
