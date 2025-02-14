@@ -11,6 +11,7 @@ export const useLiffStore = defineStore('liff', {
         const jobStore = useJobStore()
         return {
             appStore,
+            jobStore,
             liffProfile: {
                 pictureUrl: '',
                 userId: '',
