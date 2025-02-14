@@ -22,7 +22,7 @@ meta:
     <pre>{{ appStore.token }}</pre>
     <pre>{{ jobStore.selectedJob }}</pre>
     <pre>{{ jobStore.apiFetch }}</pre>
-    <pre>{{ jobStore.test }}</pre>
+    <pre>{{ jobStore.text }}</pre>
   </div>
 </template>
 
