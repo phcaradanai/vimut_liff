@@ -13,8 +13,7 @@ export const useJobStore = defineStore('job', {
     },
     actions: {
         async getJob(paramData) {
-            console.log("getJob");
-
+            this.apiFetch = 'getJob'
             try {
                 let { data } = await axios.get(
                     `/api/porter/jobs?jobId=${paramData.jobId}`
