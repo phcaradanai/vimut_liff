@@ -18,7 +18,7 @@ meta:
     <p>{{ liffProfile.displayName }}</p>
     <p>{{ liffProfile.userId }}</p>
 
-    <p>access token: {{ liffEnv.accessToken }}</p>
+    <!-- <p>access token: {{ liffEnv.accessToken }}</p> -->
     <pre>{{ appStore.token }}</pre>
     <pre>{{ selectedJob }}</pre>
     <pre>{{ jobStore.apiFetch }}</pre>
