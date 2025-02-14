@@ -20,6 +20,7 @@ meta:
 
     <p>access token: {{ liffEnv.accessToken }}</p>
     <pre>{{ appStore.token }}</pre>
+    <pre>{{ jobStore.selectedJob }}</pre>
   </div>
 </template>
 
