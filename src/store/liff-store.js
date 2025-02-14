@@ -2,7 +2,7 @@ import liff from '@line/liff'
 import { useAppStore } from '@/store/app-store.js'
 
 import { defineStore } from 'pinia'
-import axios from '@/lib/axios.js'
+import axios from '@/lib/axios'
 
 export const useLiffStore = defineStore('liff', {
     state() {

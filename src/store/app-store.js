@@ -1,7 +1,7 @@
 import { defineStore } from 'pinia'
 import { useStorage } from '@vueuse/core'
-import axios from '@/lib/axios.js'
-import i18n from '@/lib/i18n.js'
+import axios from '@/lib/axios'
+import i18n from '@/lib/i18n'
 
 export const useAppStore = defineStore('app', {
   state() {
