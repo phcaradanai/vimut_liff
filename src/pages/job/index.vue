@@ -4,7 +4,7 @@
       <pre>{{ selectedJob }}</pre>
       <pre>{{ appStore.token }}</pre>
 
-      <pre>{{ jobStore.paramId }}</pre>
+      <pre>xxxx{{ jobStore.paramId }}</pre>
     </div>
   </div>
 </template>
