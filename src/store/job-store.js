@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import axios from '@/lib/axios'
+import axios from '../lib/axios'
 
 export const useJobStore = defineStore('job', {
     state() {
