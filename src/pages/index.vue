@@ -51,7 +51,7 @@ export default {
     let paramData = JSON.parse(decodeURIComponent(urlParams.get('data')))
     this.jobStore.paramId = paramData
     await this.liffStore.initialLiff()
-    await delay(2)
+    await this.$util.delay(2)
     this.$router.replace('/job')
   },
   computed: {
